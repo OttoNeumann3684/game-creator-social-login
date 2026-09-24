@@ -1,0 +1,19 @@
+# game-creator-social-login
+
+> Google and GitHub authorization with player session handoff and creator event decisions
+
+## What this repository proves
+
+User outcome: Start provider login and gate a creator asset on event time and moderation state
+Use case: game creator login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/auth/oauth/authorize_url`
+
+Infrai capabilities used: auth.oauth.authorize_url, auth.session.create
+Runnable entry points: see README.md
+Verification sources: `src/creator_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

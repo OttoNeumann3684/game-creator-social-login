@@ -1,0 +1,19 @@
+{
+  "name": "game-creator-social-login",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/creator_login.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/creator_policy.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
